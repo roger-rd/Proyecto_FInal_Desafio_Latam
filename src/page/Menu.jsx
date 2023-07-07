@@ -1,6 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import ButtonAdd from "../components/ButtonAdd";
+
 import { useUserContext } from "../context/UserContext";
 
 
@@ -12,7 +13,7 @@ export default function Menu() {
         
     return(
         <div >
-        {/* <Carousel/> */}
+         {/* <Carousel/> */}
                 <div className="home" >
                     {pizzas.map(item =>(
                         <div className="row-cols-1 row-cols-md-1 " key={item.id} >
