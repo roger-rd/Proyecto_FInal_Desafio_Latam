@@ -1,4 +1,3 @@
-Puede ingresar haciendo click:
 
 creado con vite
 
