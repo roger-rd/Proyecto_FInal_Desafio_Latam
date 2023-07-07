@@ -6,7 +6,7 @@ ingresa aqui para ver el proyecto
 
 
 
-desarrolladores:
+desarrolladores
 
  <a href="https://github.com/Zarahisg">Zarahis Guzmán</a>;
 
