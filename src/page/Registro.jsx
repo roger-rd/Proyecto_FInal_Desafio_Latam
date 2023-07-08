@@ -30,6 +30,72 @@ export default function RegistroForm() {
       <h1>Registrar nuevo usuario</h1>
       <hr />
       <div className="form-group mt-1 ">
+        <label>Nombre</label>
+        <input
+          value={usuario.nombre}
+          onChange={handleSetUsuario}
+          type="text"
+          name="nombre"
+          className="form-control"
+          placeholder="Nombre"
+        />
+      </div>
+      <div className="form-group mt-1 ">
+        <label>Apellido</label>
+        <input
+          value={usuario.apellido}
+          onChange={handleSetUsuario}
+          type="text"
+          name="apellido"
+          className="form-control"
+          placeholder="Apellido"
+        />
+      </div>
+      <div className="form-group mt-1 ">
+        <label>Rut</label>
+        <input
+          value={usuario.rut}
+          onChange={handleSetUsuario}
+          type="text"
+          name="rut"
+          className="form-control"
+          placeholder="Rut"
+        />
+      </div>
+      <div className="form-group mt-1 ">
+        <label>Telefono</label>
+        <input
+          value={usuario.telefono}
+          onChange={handleSetUsuario}
+          type="tel"
+          name="telefono"
+          className="form-control"
+          placeholder="Numero de Telefono"
+        />
+      </div>
+      <div className="form-group mt-1 ">
+        <label>Dirección</label>
+        <input
+          value={usuario.direccion}
+          onChange={handleSetUsuario}
+          type="text"
+          name="direccion"
+          className="form-control"
+          placeholder="Direccion"
+        />
+      </div>
+      <div className="form-group mt-1 ">
+        <label>Numero de calle</label>
+        <input
+          value={usuario.numero_de_calle}
+          onChange={handleSetUsuario}
+          type="number"
+          name="numero_de_calle"
+          className="form-control"
+          placeholder="Numero de calle"
+        />
+      </div>
+      <div className="form-group mt-1 ">
         <label>Email address</label>
         <input
           value={usuario.email}
@@ -52,6 +118,16 @@ export default function RegistroForm() {
         />
       </div>
       <div className="form-group mt-1 ">
+        <label>Fecha de registro</label>
+        <input
+          value={usuario.fecha_de_registro}
+          onChange={handleSetUsuario}
+          type="date"
+          name="date"
+          className="form-control"
+        />
+      </div>
+      {/* <div className="form-group mt-1 ">
         <label>Rol</label>
         <select
           value={usuario.rol}
@@ -62,9 +138,9 @@ export default function RegistroForm() {
           <option disabled selected>
             Seleccione un rol
           </option>
-          <option value="Full Stack Developer">Full Stack Developer</option>
-          <option value="Frontend Developer">Frontend Developer</option>
-          <option value="Backend Developer">Backend Developer</option>
+          <option value="Full Stack Developer">Cliente</option>
+          <option value="Frontend Developer">Administrativo</option>
+
         </select>
       </div>
       <div className="form-group mt-1">
@@ -82,7 +158,7 @@ export default function RegistroForm() {
           <option value="Python">Python</option>
           <option value="Ruby">Ruby</option>
         </select>
-      </div>
+      </div> */}
 
       <button onClick={registrarUsuario} className="btn btn-light mt-3">
         Registrarme
