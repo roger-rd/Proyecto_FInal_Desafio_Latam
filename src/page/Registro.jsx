@@ -85,14 +85,14 @@ export default function RegistroForm() {
         />
       </div>
       <div className="form-group mt-1 ">
-        <label>Numero de calle</label>
+        <label>Numero de dirección</label>
         <input
-          value={usuario.numero_de_calle}
+          value={usuario.direccion}
           onChange={handleSetUsuario}
           type="number"
-          name="numero_de_calle"
+          name="numero_de_direccion"
           className="form-control"
-          placeholder="Numero de calle"
+          placeholder="Numero de direccion"
         />
       </div>
       <div className="form-group mt-1 ">
