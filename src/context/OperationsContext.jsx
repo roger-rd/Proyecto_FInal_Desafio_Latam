@@ -7,7 +7,7 @@ export const OperationsContext = createContext()
 
 export default function OperationsContextProvider({ children }) {
 
-    const { pizzas } = useUserContext()
+    const { platos } = useUserContext()
     const [carro, setCarro] = useState([])
 
     //FORMATEADOR VALOR A CLP
@@ -20,13 +20,13 @@ export default function OperationsContextProvider({ children }) {
         total += Number(i.precio) * Number(i.cantidad)
     ))
 
-    //SUMAR PIZZA
-    const AddPizza = (idPizza) => {
-        const pizzaSeleccionada = pizzas.find(item => item.id === idPizza)       
-        if (carro.find(item => item.id === idPizza)) {                          
+    //SUMAR PLATOS
+    const AddPlatos = (idPlato) => {
+        const platoSeleccionado = platos.find(item => item.id === idPlato)       
+        if (carro.find(item => item.id === idPlato)) {                          
             setCarro(carro.                                                       
                 map((i) => {
-                    if (i.id === idPizza) {                                     
+                    if (i.id === idPlato) {                                     
                         return { ...i, cantidad: Number(i.cantidad) + 1 }
                     } else {                                                   
                         return i
@@ -34,24 +34,24 @@ export default function OperationsContextProvider({ children }) {
                 }))
         } else {                                               
             const objetoCarro = {
-                "id": pizzaSeleccionada.id,
+                "id": platoSeleccionado.id,
                 "cantidad": "1",
-                "precio": pizzaSeleccionada.price,
+                "precio": platoSeleccionado.price,
             }
             setCarro([...carro, objetoCarro])                  
         } 
     }
    
 
-    //RESTAR PIZZA
-    const SubtractPizza = (idPizza) => {
-        let pizzaActual = carro.find(item => item.id === idPizza)        
-        if (Number(pizzaActual.cantidad) === 1) {
-            setCarro(carro.filter(item => item.id !== idPizza))         
+    //RESTAR PLATO
+    const SubtractPlato = (idPlato) => {
+        let platoActual = carro.find(item => item.id === idPlato)        
+        if (Number(platoActual.cantidad) === 1) {
+            setCarro(carro.filter(item => item.id !== idPlato))         
         } else {
             setCarro(carro.
                 map((i) => {
-                    if (i.id === idPizza) {
+                    if (i.id === idPlato) {
                         return { ...i, cantidad: Number(i.cantidad) - 1 }  
                         return i                                          
                     }
@@ -60,7 +60,7 @@ export default function OperationsContextProvider({ children }) {
     }
 
     return (
-        <OperationsContext.Provider value={{ carro, setCarro,  FormatCoin, total, AddPizza, SubtractPizza }}>
+        <OperationsContext.Provider value={{ carro, setCarro,  FormatCoin, total, AddPlatos, SubtractPlato }}>
             {children}
         </OperationsContext.Provider>
     )
