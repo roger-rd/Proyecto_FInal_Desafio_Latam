@@ -7,7 +7,7 @@ export default function ButtonAdd({idPlato}) {
 
     return (
         <button className="btn btn-danger" onClick={() => {
-            AddPizza(idPlato)
+            AddPlatos(idPlato)
             toast.success("Agregaste el producto al carro")
         }}>Añadir 🛒</button>
     )
