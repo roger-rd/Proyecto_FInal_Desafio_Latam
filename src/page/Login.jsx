@@ -1,5 +1,4 @@
 import { useState, useContext } from "react";
-// import Context from "../context/UserContext";
 import { UserContext } from "../context/UserContext";
 import { useNavigate } from "react-router-dom";
 
@@ -17,8 +16,8 @@ export default function RegistroForm() {
   };
 
   const iniciarSesion = async () => {
-    const urlServer = "http://localhost:3000/api";
-    const endpoint = "/login";
+    // const urlServer = "http://localhost:3000/api";
+    // const endpoint = "/login";
     const { email, password } = usuario;
     try {
       if (!email || !password) return alert("Email y password obligatorias");
@@ -65,4 +64,4 @@ export default function RegistroForm() {
       </button>
     </div>
   );
-}
+};
