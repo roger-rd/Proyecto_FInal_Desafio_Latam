@@ -4,15 +4,15 @@ export const UserContext = createContext()
 
 export default function UserContextProvider({ children }) {
 
-    const [pizzas, setPizzas] = useState([])
+    const [platos, setPlatos] = useState([])
     const [error, setError] = useState()
 
     const getData = async () => {
         try {
-            const response = await fetch("/pizzas.json")
+            const response = await fetch("/platos.json")
             if (!response.ok) throw "NO SE PUEDE DESPLEGAR LA INFORMACIÓN"
             const data = await response.json()
-            setPizzas(data)
+            setPlatos(data)
         } catch (error) {
             setError(error)
         }
@@ -24,7 +24,7 @@ export default function UserContextProvider({ children }) {
     }, [])
 
     return (
-        <UserContext.Provider value={{ pizzas, setPizzas, error, setError }}>
+        <UserContext.Provider value={{ platos, setPlatos, error, setError }}>
             {children}
         </UserContext.Provider>
     )
