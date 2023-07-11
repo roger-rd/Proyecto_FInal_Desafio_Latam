@@ -9,6 +9,7 @@ export default function OperationsContextProvider({ children }) {
 
     const { platos } = useUserContext()
     const [carro, setCarro] = useState([])
+    
 
     //FORMATEADOR VALOR A CLP
     const FormatCoin = (number) => 
@@ -19,6 +20,8 @@ export default function OperationsContextProvider({ children }) {
     carro.map((i) => (
         total += Number(i.precio) * Number(i.cantidad)
     ))
+    
+
 
     //SUMAR PLATOS
     const AddPlatos = (idPlato) => {
@@ -52,8 +55,7 @@ export default function OperationsContextProvider({ children }) {
             setCarro(carro.
                 map((i) => {
                     if (i.id === idPlato) {
-                        return { ...i, cantidad: Number(i.cantidad) - 1 }  
-                        return i                                          
+                        return { ...i, cantidad: Number(i.cantidad) - 1 }                                         
                     }
                 }))
         }
