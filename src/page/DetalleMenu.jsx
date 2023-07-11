@@ -6,17 +6,17 @@ import { useUserContext } from "../context/UserContext"
 import ButtonAdd from "../components/ButtonAdd"
 
 
-export default function PizzaDetail() {
+export default function PlatoDetail() {
 
     const { id } = useParams()
-    const { pizzas } = useUserContext()
+    const { platos } = useUserContext()
     const { FormatCoin } = useOperationsContext()
     const navigate = useNavigate()
 
  
     return (
         <main className="container mt-5 p-5">
-            {pizzas.filter(item => item.id === id)    
+            {platos.filter(item => item.id === id)    
                 .map((item) => (
                     <div className="card mb-3 mt-5" key={item.id}>
                         <div className="row g-0">
@@ -38,7 +38,7 @@ export default function PizzaDetail() {
                                     </ul>
                                     <h3>Precio: {FormatCoin(item.price)}</h3>
                                     <div className="d-flex justify-content-end gap-3">
-                                        <ButtonAdd idPizza={item.id} />
+                                        <ButtonAdd idPlato={item.id} />
                                         <button className="btn btn-success" onClick={() =>
                                             navigate("/menu")
                                         }>Volver 🏠</button>
