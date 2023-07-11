@@ -24,7 +24,7 @@ export default function UserContextProvider({ children }) {
     }, [])
 
     return (
-        <UserContext.Provider value={{ platos, setPlatos, error, setError }}>
+        <UserContext.Provider value={{ platos, setPlato, error, setError }}>
             {children}
         </UserContext.Provider>
     )

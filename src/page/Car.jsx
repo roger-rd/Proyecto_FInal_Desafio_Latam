@@ -7,8 +7,8 @@ import { useOperationsContext } from "../context/OperationsContext";
 
 export default function Cart() {
 
-    const { pizzas } = useUserContext()
-    const { carro, total, SubtractPizza, AddPizza, FormatCoin } = useOperationsContext()
+    const { platos } = useUserContext()
+    const { carro, total, SubtractPlato, AddPlatos, FormatCoin } = useOperationsContext()
 
     return (
         <div className="container mt-5 p-5">
@@ -19,15 +19,15 @@ export default function Cart() {
                         <caption className="title-table">Detalle del carro:</caption>
                         <tbody>
                             {carro.map((i) => {
-                                let pizza = pizzas.find(item => item.id === i.id)
+                                let plato = platos.find(item => item.id === i.id)
                                 return (
                                     <tr key={i.id}>
-                                        <th scope="row"><img src={pizza.img} className="carImg" alt={pizza.name} />  {pizza.name}</th>
+                                        <th scope="row"><img src={plato.img} className="carImg" alt={plato.name} />  {plato.name}</th>
                                         <td valign="middle" className="text-end fs-4 align-center">{FormatCoin(Number(i.precio) * Number(i.cantidad))}</td>
                                         <td valign="middle">
-                                            <button className="btn btn-sm btn-danger" onClick={() => { SubtractPizza(i.id) }}>-</button>
+                                            <button className="btn btn-sm btn-danger" onClick={() => { SubtractPlato(i.id) }}>-</button>
                                             <button className="btn btn-outline"> {i.cantidad}</button>
-                                            <button className="btn btn-sm btn-primary" onClick={() => { AddPizza(i.id)}}>+</button>
+                                            <button className="btn btn-sm btn-primary" onClick={() => { AddPlatos(i.id)}}>+</button>
                                         </td>
                                     </tr>
                                 )
