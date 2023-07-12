@@ -18,10 +18,7 @@ import Menu from './page/Menu';
 
 
 
-
-
 function App() {
-  // const [usuario, setUsuario] = useState(null)
 
   return (
     <>

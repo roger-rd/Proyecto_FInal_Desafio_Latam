@@ -1,51 +1,84 @@
 [
   {
-    "desc": "La pizza napolitana, de masa tierna y delgada pero bordes altos, es la versión propia de la cocina napolitana de la pizza redonda. El término pizza napoletana, por su importancia histórica o regional, se emplea en algunas zonas como sinónimo de pizza tonda.",
+    "desc": "Consiste en una masa frita de papa cocida, rellena de carne de vacuno, pollo, queso, cebollas, aceitunas, huevos duros, entre otros ingredientes picados.",
     "id": "P001",
-    "img": "https://firebasestorage.googleapis.com/v0/b/apis-varias-mias.appspot.com/o/pizzeria%2Fpizza-1239077_640_cl.jpg?alt=media&token=6a9a33da-5c00-49d4-9080-784dcc87ec2c",
-    "ingredients": ["mozzarella", "tomates", "jamón", "orégano"],
-    "name": "napolitana",
+    "img": "https://www.gourmet.cl/wp-content/uploads/2016/09/Papas_Rellenas_video_Retoques_01-570x458.jpg",
+    "ingredients": ["Papas", "2 huevos duros", "250 gramos de carne molida", "aceitunas negras","pimienta negra", "oregano"],
+    "name": "PAPAS RELLENAS",
+    "categoria": "plato de fondo",
+    "cantidad":"2 Personas",
     "price": 5950
   },
   {
-    "desc": "La pizza es una preparación culinaria que consiste en un pan plano, habitualmente de forma circular, elaborado con harina de trigo, levadura, agua y sal (a veces aceite de oliva) que comúnmente se cubre con salsa de tomate, queso y otros muchos ingredientes, y que se hornea a alta temperatura, tradicionalmente en un horno de leña.",
+    "desc": "Plato se utiliza carne de res cortada en trozos que serán dorados en una sartén junto con sal, pimienta, chiles verdes, rojos y de árbol.",
     "id": "P002",
-    "img": "https://firebasestorage.googleapis.com/v0/b/apis-varias-mias.appspot.com/o/pizzeria%2Fcheese-164872_640_com.jpg?alt=media&token=18b2b821-4d0d-43f2-a1c6-8c57bc388fab",
-    "ingredients": ["mozzarella", "tomates", "jamón", "choricillo"],
-    "name": "española",
+    "img": "https://www.gourmet.cl/wp-content/uploads/2021/08/Chili-con-Carne-Ajustada-Web-570x458.jpg",
+    "ingredients": ["Carne Molida","Pulpa de tomate","Porotos negros","Choclo desgranado"],
+    "name": "CHILI CON CARNE",
+    "categoria": "plato de fondo",
+    "cantidad":"4 Personas",
     "price": 7250
   },
   {
-    "desc": "La pizza es una preparación culinaria que consiste en un pan plano, habitualmente de forma circular, elaborado con harina de trigo, levadura, agua y sal (a veces aceite de oliva) que comúnmente se cubre con salsa de tomate, queso y otros muchos ingredientes, y que se hornea a alta temperatura, tradicionalmente en un horno de leña.",
+    "desc": "técnica de cocción de la cocina japonesa en la cual los alimentos son asados al horno en un adobo de salsa dulce.",
     "id": "P003",
-    "img": "https://firebasestorage.googleapis.com/v0/b/apis-varias-mias.appspot.com/o/pizzeria%2Fpizza-1239077_640_com.jpg?alt=media&token=e7cde87a-08d5-4040-ac54-90f6c31eb3e3",
-    "ingredients": ["mozzarella", "tomates", "salame", "orégano"],
-    "name": "salame",
-    "price": 5990
+    "img": "https://www.gourmet.cl/wp-content/uploads/2021/08/Pollo_Teriyaki_Interior_Gourmet.jpg",
+    "ingredients": ["Pechugas de pollo", "Arroz blanco", "Brócoli al vapor"," Salsa Teriyaki"],
+    "name": "POLLO TERIYAKI",
+    "categoria": "plato de fondo",
+    "cantidad":" 2 Personas",
+    "price": 7250
   },
   {
-    "desc": "La pizza es una preparación culinaria que consiste en un pan plano, habitualmente de forma circular, elaborado con harina de trigo, levadura, agua y sal (a veces aceite de oliva) que comúnmente se cubre con salsa de tomate, queso y otros muchos ingredientes, y que se hornea a alta temperatura, tradicionalmente en un horno de leña.",
+    "desc": "Combinacion de albóndigas caseras con caldo y verduras. Las albóndigas están hechas con una mezcla de carne picada, pan rallado, huevos y especias.",
     "id": "P004",
-    "img": "https://firebasestorage.googleapis.com/v0/b/apis-varias-mias.appspot.com/o/pizzeria%2Fpizza-2000595_640_c.jpg?alt=media&token=61325b6e-a1e0-441e-b3b5-7335ba13e8be",
-    "ingredients": ["mozzarella", "salame", "aceitunas", "champiñones"],
-    "name": "cuatro estaciones",
-    "price": 9590
+    "img": "https://www.gourmet.cl/wp-content/uploads/2016/09/recetas-gourmet-marzo-2021-internet-7-1-570x458.jpg",
+    "ingredients": ["Carne Molida","Marraqueta","Huevos","Zapallo amarillo","Papas"],
+    "name": "CAZUELA DE ALBÓNDIGAS",
+    "categoria": "plato de fondo",
+    "cantidad":"2 Personas",
+    "price": 7250
   },
   {
-    "desc": "La pizza es una preparación culinaria que consiste en un pan plano, habitualmente de forma circular, elaborado con harina de trigo, levadura, agua y sal (a veces aceite de oliva) que comúnmente se cubre con salsa de tomate, queso y otros muchos ingredientes, y que se hornea a alta temperatura, tradicionalmente en un horno de leña.",
+    "desc": "Se combinan con una cremosa salsa de azafrán que le da un color dorado y un sabor delicado y aromático. Los ostiones frescos añaden un toque marino y textura suave a esta deliciosa preparación.",
     "id": "P005",
-    "img": "https://firebasestorage.googleapis.com/v0/b/apis-varias-mias.appspot.com/o/pizzeria%2Fpizza-salame.jpg?alt=media&token=ab3d4bf8-01f2-4810-982b-bd7fb6b517b2",
-    "ingredients": ["mozzarella", "tomates cherry", "bacon", "orégano"],
-    "name": "bacon",
-    "price": 6450
+    "img": "https://www.gourmet.cl/wp-content/uploads/2012/07/fetuccini-con-salsa-de-azafran-y-ostiones.jpg",
+    "ingredients": ["Pasta a eleccion","ostiones sin concha","Vino blanco","Crema","queso parmesano rallado"],
+    "name": "FETUCCINI CON SALSA DE AZAFRÁN Y OSTIONES",
+    "categoria": "plato de fondo",
+    "cantidad":"2 Personas",
+    "price": 7250
   },
   {
-    "desc": "La pizza es una preparación culinaria que consiste en un pan plano, habitualmente de forma circular, elaborado con harina de trigo, levadura, agua y sal (a veces aceite de oliva) que comúnmente se cubre con salsa de tomate, queso y otros muchos ingredientes, y que se hornea a alta temperatura, tradicionalmente en un horno de leña.",
+    "desc": " El lomo vetado se sazona con especias y se hornea lentamente, lo que permite que la carne se cocine de manera uniforme y conserve su jugosidad.",
     "id": "P006",
-    "img": "https://firebasestorage.googleapis.com/v0/b/apis-varias-mias.appspot.com/o/pizzeria%2Fpizza-2000595_640_c.jpg?alt=media&token=61325b6e-a1e0-441e-b3b5-7335ba13e8be",
-    "ingredients": ["mozzarella", "pimientos", "pollo grillé", "orégano"],
-    "name": "pollo picante",
-    "price": 8500
+    "img": "https://www.gourmet.cl/wp-content/uploads/2012/07/lomo-vetado-con-salsa-de-champinones.jpg",
+    "ingredients": ["Lomo vetado","Pimienta","Salsa de Soya","Aceite de oliva","Vino blanco"],
+    "name": "LOMO VETADO AL HORNO",
+    "categoria": "plato de fondo",
+    "cantidad":"2 Personas",
+    "price": 7250
+  },
+  {
+    "desc": "Es un plato sabroso y aromático que combina trozos de pollo tierno con una salsa de curry llena de especias y sabores exóticos..",
+    "id": "P007",
+    "img": "https://www.gourmet.cl/wp-content/uploads/2016/09/Pollo-al-Curry-ajustada-web-570x458.jpg",
+    "ingredients": ["Pechugas de pollo", "Curry","Almendra sin piel", "Salsa Blanca"],
+    "name": "POLLO AL CURRY",
+    "categoria": "plato de fondo",
+    "cantidad":"2 Personas",
+    "price": 7250
+  },
+  {
+    "desc": ".",
+    "id": "P008",
+    "img": "https://www.gourmet.cl/wp-content/uploads/2021/08/Quiche_Adaptada_Gourmet.jpg",
+    "ingredients": ["Aceite de oliva","Quinoa tricolor","Pimienta Negra Molida","Pimentón rojo","Zapallo italiano", "Huevos","Crema de leche"],
+    "name": "QUICHE VEGETARIANO CON MASA DE QUINOA",
+    "categoria": "plato de fondo",
+    "cantidad":" 2 Personas",
+    "price": 7250
   }
+  
   
 ]

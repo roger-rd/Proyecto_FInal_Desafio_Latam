@@ -40,6 +40,8 @@ export default function Menu() {
                                     <hr />
                                     <div className="card-footer" >
                                         <h5 className="text-muted">$ {item.price}</h5>
+                                        <h5 className="text-muted">👨🏼‍💼 {item.cantidad}</h5>
+
                                     <div className="buttonHome">
                                         <button className="btn btn-primary" onClick={() => {  
                                             navigate(`/DetalleMenu/${item.id}`);
