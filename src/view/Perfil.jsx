@@ -13,8 +13,13 @@ export default function Perfil() {
   }, []);
 
   return (
-    <div>
-      hola es la pagina del perfil
-    </div>
+    <><div>
+      <h1> <span className="badge bg-secondary">Bienvenid@</span></h1>
+    </div><div class="container text-center">
+        <div class="row">
+          <div class="col-6">Nombre de usuario</div>
+          <div class="col-6">Podrás incluir tus MyFood Favoritos, revisar tus ultimos pedidos y más. </div>
+        </div>
+      </div></>
   );
 }
