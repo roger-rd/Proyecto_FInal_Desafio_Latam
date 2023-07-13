@@ -3,7 +3,7 @@ import { createContext, useContext, useEffect, useState } from "react"
 export const UserContext = createContext()
 
 export default function UserContextProvider({ children }) {
-
+    const [usuario, setUsuario] = useState(null);
     const [platos, setPlatos] = useState([])
     const [error, setError] = useState()
 
@@ -24,7 +24,7 @@ export default function UserContextProvider({ children }) {
     }, [])
 
     return (
-        <UserContext.Provider value={{ platos, setPlatos, error, setError }}>
+        <UserContext.Provider value={{usuario,setUsuario, platos, setPlatos, error, setError }}>
             {children}
         </UserContext.Provider>
     )

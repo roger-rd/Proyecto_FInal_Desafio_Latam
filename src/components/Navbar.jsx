@@ -1,7 +1,10 @@
 import "../assets/css/navbarFooter.css";
-import { NavLink,Link, useNavigate} from "react-router-dom";
+import { NavLink, useNavigate} from "react-router-dom";
 
-// import icon from '../assets/img/icon-pizza-2.png'
+
+import { useContext } from "react";
+import { AuthContext } from "../context/AuthContext";
+
 import { useOperationsContext } from "../context/OperationsContext";
 
 
@@ -11,20 +14,14 @@ export default function Navbar() {
     const activeLink = ({ isActive }) => (isActive ? 'active' : 'undefined')
     const navigate = useNavigate();
     const {FormatCoin, total} = useOperationsContext ()
-    // const { usuario, setUsuario } = useContext(Context);
-    // const logout = () => {
-    // setUsuario(null);
-    // localStorage.removeItem("token");
-    // navigate("/");
-    //};
+    const { usuario } = useContext(AuthContext);
+
     
     return (
 
         <nav>
             <div className=" d-flex ">
-                {/* <div className="p-1 flex-grow-1 icon">
-                    <img src={icon} alt="" width={70} />
-                </div> */}
+                
                 <div className="p-1 navHom">
                     <NavLink className={({ isActive }) => (isActive ? 'active' : undefined)} end to="/" >🍕🍝🍔 My Food</NavLink>
                 </div>
@@ -37,10 +34,28 @@ export default function Navbar() {
                 <div className="p-1 navHom car">
                     <NavLink className={({ isActive }) => (isActive ? 'active' : undefined)} end to="/login" >Iniciar Sesión</NavLink>
                 </div>
-                <div className="p-1 navHom car">
-                    <NavLink className={({ isActive }) => (isActive ? 'active' : undefined)} end to="/Car" >🛒{FormatCoin(total)}</NavLink>
+                
+
+                {/* rutas protegidas */}
+
+                {usuario ? (
+                    <div className=" d-flex ">
+                        <div className="p-1 navHom car">
+                            <NavLink className={({ isActive }) => (isActive ? 'active' : undefined)} end to="/car" >🛒{FormatCoin(total)}</NavLink>
+                        </div>
+                        <div className="p-1 navHom car">
+                            <NavLink className={({ isActive }) => (isActive ? 'active' : undefined)} end to="/perfil" >Perfil</NavLink>
+                        </div>
+                        <div className="p-1 navHom car">
+                            <NavLink className={({ isActive }) => (isActive ? 'active' : undefined)} end to="/mispedidos" >Mis Pedidos</NavLink>
+                        </div>
+                        <div className="p-1 navHom car">
+                            <NavLink className={({ isActive }) => (isActive ? 'active' : undefined)} end to="/favoritos" > Favoritos</NavLink>
+                        </div>
+                    </div> 
+                    
+                ):(null)}
                 </div>
-            </div> 
         </nav>
     );
 }

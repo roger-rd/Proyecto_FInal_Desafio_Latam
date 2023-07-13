@@ -6,6 +6,7 @@ import UserContextProvider from "./context/UserContext"
 import OperationsContextProvider from "./context/OperationsContext";
 
 import { BrowserRouter } from 'react-router-dom'
+import { AuthProvider } from './context/AuthContext';
 
 
 
@@ -16,7 +17,9 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <BrowserRouter>
     <UserContextProvider >
       <OperationsContextProvider>
-        <App />
+        <AuthProvider>
+          <App />
+        </AuthProvider>
       </OperationsContextProvider>
     </UserContextProvider>
   </BrowserRouter>

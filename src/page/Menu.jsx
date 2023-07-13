@@ -1,3 +1,4 @@
+import "../assets/css/home.css";
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import ButtonAdd from "../components/ButtonAdd";

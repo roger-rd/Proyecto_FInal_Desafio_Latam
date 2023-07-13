@@ -1,11 +1,21 @@
 import "../assets/css/car.css";
 import { useUserContext } from "../context/UserContext"
 import { useOperationsContext } from "../context/OperationsContext";
+import { useNavigate } from "react-router-dom";
 
 
-export default function Cart() {
+export default function Car() {
     const { platos } = useUserContext();
     const { carro, total, SubtractPlato, AddPlatos, FormatCoin } = useOperationsContext();
+
+    const navigate = useNavigate();
+
+    // if(localStorage.getItem("token")===null){
+    //     navigate("/login")
+    //     console.log("dentro del if")
+    // }
+
+   
 
     return (
         <div className="container mt-5 p-5">
