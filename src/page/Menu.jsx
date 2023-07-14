@@ -25,16 +25,16 @@ export default function Menu() {
                                         <h5 className="card-title">{item.name}</h5>
                                         <ul className="card-text">
                                             <li>
-                                                🍕{item.ingredients[0]}
+                                            {item.ingredients[0]}
                                             </li>
                                             <li>
-                                                🍕{item.ingredients[1]}
+                                            {item.ingredients[1]}
                                             </li>
                                             <li>
-                                                🍕{item.ingredients[2]}
+                                            {item.ingredients[2]}
                                             </li>
                                             <li>
-                                                🍕{item.ingredients[3]}
+                                            {item.ingredients[3]}
                                             </li>
                                         </ul>
                                     </div>
@@ -44,7 +44,7 @@ export default function Menu() {
                                         <h5 className="text-muted">👨🏼‍💼 {item.cantidad}</h5>
 
                                     <div className="buttonHome">
-                                        <button className="btn btn-primary" onClick={() => {  
+                                        <button className="btn btn-warning" onClick={() => {  
                                             navigate(`/DetalleMenu/${item.id}`);
                                         }}>Ver más 👀</button>
                                         <ButtonAdd idPlato={item.id} />
