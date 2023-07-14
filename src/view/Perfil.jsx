@@ -48,6 +48,7 @@ export default function Perfil() {
                 </div>
             </div>
           <div class="col-6">Podrás incluir tus MyFood Favoritos, revisar tus ultimos pedidos y más. </div>
+
         </div>
       </div></>
   );

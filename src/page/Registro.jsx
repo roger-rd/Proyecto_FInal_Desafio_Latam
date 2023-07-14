@@ -13,11 +13,8 @@ export default function RegistroForm() {
   };
 
   const registrarUsuario = async () => {
-    const urlServer = "http://localhost:3000/api";
-    const endpoint = "/usuarios";
-    try {
-      await axios.post(urlServer + endpoint, usuario);
-      alert("Usuario registrado con éxito");
+      try {
+      
       navigate("/login");
     } catch (error) {
       alert("Algo salió mal ...");
