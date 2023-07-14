@@ -4,11 +4,6 @@ import icon from '../assets/img/pizza1.jpeg'
 
 
 
-
-
-
-
-
 export default function Carousel() {
     return (
         <>

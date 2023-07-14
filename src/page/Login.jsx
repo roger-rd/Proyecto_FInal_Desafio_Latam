@@ -1,7 +1,7 @@
 import React, { useState, useContext } from "react";
 import { AuthContext } from "../context/AuthContext";
-import { UserContext } from "../context/UserContext";
 import { useNavigate } from "react-router-dom";
+
 
 export default function RegistroForm() {
   const { setUsuario } = useContext(AuthContext);
@@ -22,7 +22,7 @@ export default function RegistroForm() {
     const { email, password } = usuario;
     try {
       if (!email || !password) return alert("Email y password obligatorias");
-      setUsuario(usuario); 
+      setUsuario({ email, password }); 
       localStorage.setItem("usuario", JSON.stringify(usuario));
       navigate("/perfil");
       alert("Usuario identificado con éxito 😀");

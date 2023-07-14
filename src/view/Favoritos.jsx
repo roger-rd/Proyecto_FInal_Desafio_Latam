@@ -14,7 +14,7 @@ export default function Favoritos() {
 
   return (
     <div>
-      hola es la pagina del favoritos ver
+      hola es la pagina del favoritos
     </div>
   );
 }

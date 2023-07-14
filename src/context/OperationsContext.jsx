@@ -13,7 +13,7 @@ export default function OperationsContextProvider({ children }) {
 
     //FORMATEADOR VALOR A CLP
     const FormatCoin = (number) => 
-       ( new Intl.NumberFormat('es-CL', { style: 'currency', currency: 'CLP' }).format(number))
+        ( new Intl.NumberFormat('es-CL', { style: 'currency', currency: 'CLP' }).format(number))
     
     //CALCULO TOTAL
     let total = 0
@@ -44,7 +44,7 @@ export default function OperationsContextProvider({ children }) {
             setCarro([...carro, objetoCarro])                  
         } 
     }
-   
+
 
     //RESTAR PLATO
     const SubtractPlato = (idPlato) => {
