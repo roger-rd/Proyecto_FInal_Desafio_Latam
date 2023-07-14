@@ -1,6 +1,6 @@
-import icon3 from '../assets/img/Comida-fondo.jpeg'
-import icon2 from '../assets/img/Comida-internacional.jpeg'
-import icon from '../assets/img/grupocomiendo.jpeg'
+import icon3 from '../assets/img/diversidad.jpg'
+import icon2 from '../assets/img/MyFood.jpg'
+import icon from '../assets/img/mesa.jpg'
 
 
 
