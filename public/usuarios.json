@@ -1,0 +1,17 @@
+[
+    {
+      "id": "U001",
+      "nombre": "Zarahis",
+      "apellido":"Guzman",
+      "Rut":"26368576-9",
+      "Telefono":"+56967687418",
+      "Direccion":"Providencia,Av Tobalaba 4109",
+      "Correo":"zarahisg@gmail.com",
+      "Contraseña":"******",
+      "Fecha de Registro":"13-07-23",
+      "Activo":"Si",
+      "Rol":"usuario"
+    }
+  ]
+  
+  

@@ -1,11 +1,6 @@
-import icon3 from '../assets/img/Promo-Pizza-Familiar.jpg'
-import icon2 from '../assets/img/icon2.png'
-import icon from '../assets/img/pizza1.jpeg'
-
-
-
-
-
+import icon3 from '../assets/img/Comida-fondo.jpeg'
+import icon2 from '../assets/img/Comida-internacional.jpeg'
+import icon from '../assets/img/grupocomiendo.jpeg'
 
 
 
