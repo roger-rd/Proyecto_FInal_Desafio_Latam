@@ -13,10 +13,12 @@ export default function perfilProvider({ children }) {
             if (!response.ok) throw "NO SE PUEDE DESPLEGAR LA INFORMACIÓN"
             const data = await response.json()
             setUsuarios(data)
+            
         } catch (error) {
             setError(error)
         }
     }
+    
 
 
     useEffect(() => {                    //llamada a fx getData() para renderizar 1 vez el sitio
