@@ -15,13 +15,13 @@ export default function Carousel() {
                 </div>
                 <div className="carousel-inner">
                     <div className="carousel-item active">
-                        <img src={icon} alt="..." width={1500} height={350} />
+                        <img src={icon} alt="..." width={1500} height={550} />
                     </div>
                     <div className="carousel-item">
-                        <img src={icon2} alt="..." width={1500} height={350} />
+                        <img src={icon2} alt="..." width={1500} height={550} />
                     </div>
                     <div className="carousel-item">
-                        <img src={icon3} alt="..." width={1500} height={350} />
+                        <img src={icon3} alt="..." width={1500} height={550} />
                     </div>
                 </div>
                 <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">

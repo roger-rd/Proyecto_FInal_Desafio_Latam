@@ -51,7 +51,7 @@ export default function Perfil() {
                         </div>
                         <div className="buttonHome">
                           <button
-                            className="btn btn-primary"
+                            className="btn btn-warning"
                             onClick={() => {
                               navigate(`/Favoritos/${item.id}`);
                             }}
