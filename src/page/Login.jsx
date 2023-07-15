@@ -61,7 +61,7 @@ export default function RegistroForm() {
             autoComplete="current-password"
           />
         </div>
-        <button onClick={iniciarSesion} className="btn btn-light mt-3">
+        <button onClick={iniciarSesion} className="btn btn-light mt-3 login">
           Iniciar Sesión
         </button>
       </form>
