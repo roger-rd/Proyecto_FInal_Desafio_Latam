@@ -2,8 +2,8 @@ a{
   font-size: larger;
   text-decoration: none;
   color: white;
-  margin-left: 120px;
-  margin-right: 50px;
+  margin-left: 20px;
+  margin-right: 10px;
 }
 
 nav {
@@ -23,11 +23,11 @@ nav {
 }
 
 .active {
-  color: rgb(225, 17, 17);
+  color: rgb(218, 17, 17);
 } 
 
 footer{
-  margin-top: 350px;
+  margin-top: 0px;
   background: #00080a;
   margin-bottom: 2px;
 }
