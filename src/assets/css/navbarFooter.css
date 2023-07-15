@@ -27,7 +27,22 @@ nav {
 } 
 
 footer{
-  margin-top: 0px;
+  position: fixed ;
+  /* margin-top: 20%; */
   background: #00080a;
   margin-bottom: 2px;
+  height: 10%;
+  bottom: 0;
+  width: 100%;
 }
+
+
+body {
+  margin-bottom: 100px; /* Ajusta el valor según el alto del footer */
+}
+
+
+
+
+
+
