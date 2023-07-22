@@ -51,23 +51,31 @@ export default function Perfil() {
                         </div>
                         <div className="buttonHome">
                           <button
-                            className="btn btn-warning"
+                            className="btn btn-info"
                             onClick={() => {
                               navigate(`/Favoritos/${item.id}`);
                             }}
                           >
-                            Favoritos 👀
+                            Editar Perfil  👀
                           </button>
                         </div>
+                        <br />
+                        <div className="buttonHome">
+                          <button
+                            className="btn btn-danger"
+                            onClick={() => {
+                              navigate(`/Favoritos/${item.id}`);
+                            }}
+                          >
+                            Eliminar 👀
+                          </button>
+                        </div>
+                        <br />
                       </div>
                     </div>
                   </div>
                 ))}
             </div>
-          </div>
-          <div className="col-6">
-            Podrás incluir tus MyFood Favoritos, revisar tus ultimos pedidos y
-            más.
           </div>
         </div>
       </div>
